@@ -1,0 +1,161 @@
+LOBBY:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+                TUNNEL: 
+
+BATHROOM:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+KITCHEN:
+        desc: 
+        items: [   ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+SECOND FLOOR STAIRCASE:
+        desc: a staircase to second floor
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+BASEMENT STAIRCASE:
+        desc: a staircase to basement
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+ROOM1:
+        desc: this is icer's room
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+ROOM2:
+        desc: this is dinny's room
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+ROOM3:
+        desc: this is jason's room
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+
+STUDY ROOM:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+FIRST FLOOR HALLWAY:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+SECOND FLOOR HALLWAY:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+ROOM5:
+        desc: this is alex's room
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+ROOM6:
+        desc: this room is locked
+
+
+ROOM7:
+        desc: this room is locked
+
+
+ROOM8:
+        desc: this is Iven's room
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+LIBRARY:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+SECOND FLOOR BATHROOM:
+        desc: 
+        items: [  ]
+        north: 
+        east: 
+        west: 
+        south: 
+        lock:
+
+BALCONY:
+        desc: 
+        items: [  ]
+        west: COMMEN ROOM
+        south: 
+        lock:
+
+COMMEN ROOM:
+        desc: 
+        items: [  ]
+        north: 
+        east: BALCONY
+        west: 
+        south: 
+        lock:
+
