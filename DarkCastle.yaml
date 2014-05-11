@@ -1,161 +1,124 @@
 LOBBY:
-        desc: 
-        items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        desc: This is the first floor lobby, police officer is here
+        items: [     ]
+        north: BASE STAIR
+        east: FIRST HALLWAY
+        south: 2nd STTAIR
         lock:
                 TUNNEL: 
 
 BATHROOM:
-        desc: 
+        desc: This is the bathroom, Xin is here 
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: STUDY ROOM
         lock:
 
 KITCHEN:
-        desc: 
-        items: [   ]
-        north: 
-        east: 
-        west: 
-        south: 
+        desc: This is the kicken, but the power is off, can't see anything
+        items: [  ]
+        west: STUDY ROOM
         lock:
 
-SECOND FLOOR STAIRCASE:
-        desc: a staircase to second floor
+2nd STAIR:
+        desc: A staircase connect first and second floor
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: LOBBY
+        south: LIBRARY
         lock:
 
-BASEMENT STAIRCASE:
-        desc: a staircase to basement
+BASE STAIR:
+        desc: A staircase to basement
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: GMAE ROOM
+        south: LOBBY
         lock:
 
 ROOM1:
-        desc: this is icer's room
+        desc: This is Icer's room
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        south: FIRST HALLWAY
         lock:
 
 ROOM2:
-        desc: this is dinny's room
+        desc: This is Zhao's room
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: FIRST HALLWAY
         lock:
 
 ROOM3:
-        desc: this is jason's room
+        desc: This is Dinh's room
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        south: STUDY ROOM
         lock:
 
 
 STUDY ROOM:
-        desc: 
+        desc: This study room, Alireza is here working on something...
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: ROOM3
+        east: KICKEN
+        west: FIRST HALLWAY
+        south: BATH ROOM
         lock:
 
-FIRST FLOOR HALLWAY:
-        desc: 
+FIRST HALLWAY:
+        desc: First floor hallway.
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: ROOM1
+        east: STUDY ROOM
+        west: LOBBY
+        south: ROOM2
         lock:
 
-SECOND FLOOR HALLWAY:
-        desc: 
+SECOND HALLWAY:
+        desc: Second floor hallway.
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: ROOM5
+        east: COMMEN ROOM
+        west: LIBRARY
+        south: ROOM6
         lock:
 
 ROOM5:
-        desc: this is alex's room
+        desc: This is alex's room
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        south: SECOND HALLWAY
         lock:
 
 ROOM6:
-        desc: this room is locked
+        desc: This room is locked
 
 
 ROOM7:
-        desc: this room is locked
+        desc: This room is locked
 
 
 ROOM8:
-        desc: this is Iven's room
+        desc: This is Even's room, a cold lifeless body laying on the ground. Rest in peace my friend.
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: COMMEN ROOM
         lock:
 
 LIBRARY:
-        desc: 
+        desc: This is the library, Zhao is here for long time.
         items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
+        north: 2nd STAIR
+        east: SECOND HALLWAY
         lock:
 
-SECOND FLOOR BATHROOM:
-        desc: 
-        items: [  ]
-        north: 
-        east: 
-        west: 
-        south: 
-        lock:
 
 BALCONY:
-        desc: 
+        desc: This is balcony, nothing here but sunshine.
         items: [  ]
         west: COMMEN ROOM
-        south: 
         lock:
 
 COMMEN ROOM:
-        desc: 
+        desc: This is the commem room, Cho is here.
         items: [  ]
-        north: 
+        north: ROOM7
         east: BALCONY
-        west: 
-        south: 
+        west: SECOND HALLWAY
+        south: ROOM8
         lock:
 
