@@ -1,12 +1,10 @@
 #ifndef ROOM_H
 #define ROOM_H
-
-#include <string>
 #include <iostream>
+#include <string>
 
-using std::cout;
+using namespace std;
 using std::string;
-using std::endl;
 
 class Room
 {
@@ -25,6 +23,6 @@ public:
 	void gettalk();
 	void getitem();
 
-}
+};
 
 #endif
