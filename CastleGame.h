@@ -86,18 +86,18 @@ void getMap(char floor)
     cout <<"              |           |           | BathRoom  |          |" << endl;
     cout <<"              |           |   Dinh    |   Xin     |          |" << endl;
     cout <<"               ==========  =========== ==========  ==========|" << endl;
-    cout <<"              				      {__________}" << endl;
-    cout <<"              				      {2nd  Stair}" << endl;
-    cout <<"              				      {__________}" << endl;
-    cout <<"              				      ~~~~~~~~~~~~" << endl;
+    cout <<"                                                  {__________}" << endl;
+    cout <<"                                                  {2nd  Stair}" << endl;
+    cout <<"                                                  {__________}" << endl;
+    cout <<"                                                  ~~~~~~~~~~~~" << endl;
     }
     else if(floor == '0')
     {
-    cout <<"                                                      N	  " << endl;	  
-    cout <<"                                                	  | 	  " << endl;
+    cout <<"                                                      N       " << endl;	  
+    cout <<"                                                      |       " << endl;
     cout <<"	      {1st  Stair}                            W---+---E	  " << endl;
-    cout <<"          {__________}            	Basement          |	  " << endl;
-    cout <<"          {__________}                                S	  " << endl;
+    cout <<"          {__________}            	Basement          |       " << endl;
+    cout <<"          {__________}                                S       " << endl;
     cout <<"          ~~~~~~~~~~~~					  " << endl;
     cout <<"           ===========                      ==========	  " << endl;
     cout <<"          |           |====================|          |	  " << endl;
@@ -135,7 +135,7 @@ void getMap(char floor)
     cout <<"          |           |   Room6    |   Room8   |==========|   " << endl;
     cout <<"          |           |            |   Evan    |{_________}   " << endl;                
     cout <<"           ==========  ========================={_________}   " << endl;
-    cout <<"						    {2nd Stair}	  " << endl;
+    cout <<"                                                {2nd Stair}	  " << endl;
 }		
 
 void displayRoomlist()
