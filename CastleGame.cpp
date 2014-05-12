@@ -58,6 +58,7 @@ int main()
     cout << "\t3. Interact with person" << endl;
     cout << "\t4. Interact with item" << endl;
     cout << "\t5. Go to a different room" << endl;
+    cout << "\t6. Use staircase" << endl;
 //    cout << "2. go east" << endl;
 //    cout << "3. go south" << endl;
 //    currentMapinteract();
@@ -92,6 +93,35 @@ int main()
             cin >> playerChoice;
 			setCurrentRoom(playerChoice);
         }
+        else if(playerChoice == '6')
+        {
+        	if(currentFloor == '1')
+        	{
+        		cout << "Do you want to go to:" << endl;
+        		cout << "\t1. Basement" << endl;
+        		cout << "\t2. Second Floor" << endl;
+        		cin >> playerChoice;
+        		if(playerChoice == '1')
+        		{
+        			cout << "You are now in the Basement" << endl;
+        		}
+        		else if (playerChoice == '2')
+        		{
+        			cout << "You are now in the Second floor" << endl;
+        		}
+  			//
+        	}
+        	else if(currentFloor == '0')
+        	{
+        		cout << "You are now on the First floor" << endl;
+        		
+        	}
+        	else if(currentFloor == '2')
+        	{
+        		cout << "You are now on the First floor" << endl;
+        	}
+        	
+        }
         else
         {
             cout << "incorrect choice argument" << endl;
@@ -102,6 +132,7 @@ int main()
         cout << "\t3. Interact with person" << endl;
         cout << "\t4. Interact with item" << endl;
         cout << "\t5. Go to a different room" << endl;
+        cout << "\t6. Use staircase" << endl;
     }
 
 
