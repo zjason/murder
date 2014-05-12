@@ -86,10 +86,10 @@ void getMap(char floor)
     cout <<"              |           |   (2)     | BathRoom  |          |" << endl;
     cout <<"              |           |   Dinh    |   Xin (5) |          |" << endl;
     cout <<"               ==========  =========== ==========  ==========|" << endl;
-    cout <<"              				                      {__________}" << endl;
-    cout <<"              				                      {2nd  Stair}" << endl;
-    cout <<"              				                      {__________}" << endl;
-    cout <<"              				                      ~~~~~~~~~~~~" << endl;
+    cout <<"              				      {__________}" << endl;
+    cout <<"              				      {2nd  Stair}" << endl;
+    cout <<"              				      {__________}" << endl;
+    cout <<"              				      ~~~~~~~~~~~~" << endl;
     }
     else if(floor == '0')
     {
@@ -135,7 +135,7 @@ void getMap(char floor)
     cout <<"          |           |   Room6    |   Room8   |==========|   " << endl;
     cout <<"          |           |            |   Evan    |{_________}   " << endl;                
     cout <<"           ==========  ========================={_________}   " << endl;
-    cout <<"						                        {2nd Stair}	  " << endl;
+    cout <<"						    {2nd Stair}	  " << endl;
 }		
 
 void displayRoomlist()
