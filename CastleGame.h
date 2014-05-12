@@ -95,8 +95,8 @@ void getMap(char floor)
     {
     cout <<"                                                      N       " << endl;	  
     cout <<"                                                      |       " << endl;
-    cout <<"	      {1st  Stair}                            W---+---E	  " << endl;
-    cout <<"          {__________}            	Basement          |       " << endl;
+    cout <<"          {1st  Stair}                            W---+---E   " << endl;
+    cout <<"          {__________}              Basement          |       " << endl;
     cout <<"          {__________}                                S       " << endl;
     cout <<"          ~~~~~~~~~~~~					  " << endl;
     cout <<"           ===========                      ==========	  " << endl;
