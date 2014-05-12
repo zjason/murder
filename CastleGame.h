@@ -13,7 +13,7 @@ Room Room2("Room description: This is Dinh's room, Dinh is sleepy lazy gamer", "
 Room Room3("Room description: This is a empty room", "Room name: Room3", "Person: No one is here", "", "", "");
 Room BathRoom("Room description: This is bathroom. There is a foreigner in here who only speaks Mandarin", "Room name: BathRoom", "Person: Xin", "Xin: 'Ta ma de ，wo shi xiong shou. ni yao bu zhua wo，wo jiu sha le ni'", "There is nothing here", "");
 Room StudyRoom("Room description: This is study room, Ali is workink on something..", "Room name: Study Room", "Person: Ali", "Ali: 'Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.'", "There is nothing here", "");
-Room Kitchen("Room description: This is a big kicken, smells bad, no one is in here", "Room name: Kitchen", "Person: No one is here", "", "", "");
+Room Kitchen("Room description: This is a big kicken, smells bad, no one is in here", "Room name: Kitchen", "Person: No one is here", "There is nothing here", "", "");
 Room result;
 
 void getCurrentRoom()
