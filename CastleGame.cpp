@@ -82,7 +82,60 @@ int main()
         else if(playerChoice == '3')
         {
             result.gettalk();
-		}
+            if(roomindex == '0')
+            {
+            	cout << "Police Officer: Here is the list of all suspects within the castle," << endl;
+            	cout << "who do you think the murderer is?" << endl;
+            	cout << "1. Stephen Cho" << endl;
+            	cout << "2. Janitor Bob" << endl;
+            	cout << "3. Icer Bing" << endl;
+            	cout << "4. Dinh Nguyen" << endl;
+            	cout << "5. Alireza Majd" << endl;
+            	cout << "6. Jason Zhao" << endl;
+            	cout << "7. Pedro Sorto" << endl;
+            	cout << "8. Xin Gan" << endl;
+            	cout << "9. Evan Islam (suicide)" << endl;
+            	cout << "10. Never Mind, I haven't decided yet." << endl;
+            	cin >> playerChoice;
+            	if(playerChoice == '1' || playerChoice == '2' || playerChoice == '3' || playerChoice == '4' || playerChoice == '5' || playerChoice == '6' || playerChoice == '7')
+            	{
+            		cout << "You watch as the suspect was escorted out by the police." << endl;
+            		cout << "Someone suddenly runs up to you and stabs you from behind. As you lay" << endl;
+            		cout << "on the ground in shock and losing conciousness, you watch as the real" << endl;
+            		cout << "murderer walks over you and out the front door." << endl;
+			cout << " ___    _____  _   _  ____      _____ __  __  ___    ____   " << endl;
+			cout << "|  _`\\ /  _  \\/ \\_/ \\|  _`\\    |  _  || | | ||  _`\\ |  _`\\ " << endl;
+			cout << "| | \\_|| (_) ||     || |_`_|   | | | || | | || |_`_|| (_) | " << endl;
+			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
+			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
+			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
+            		cout << "You did not find the real murderer." << endl;
+            	}
+            	else if(playerChoice == '9')
+            	{
+            		cout << "You watch as the police left the vicinity." << endl;
+            		cout << "Someone suddenly runs up to you and stabs you from behind. As you lay" << endl;
+            		cout << "on the ground in shock and losing conciousness, you watch as the real" << endl;
+            		cout << "murderer walks over you and out the front door." << endl;
+			cout << " ___    _____  _   _  ____      _____ __  __  ___    ____   " << endl;
+			cout << "|  _`\\ /  _  \\/ \\_/ \\|  _`\\    |  _  || | | ||  _`\\ |  _`\\ " << endl;
+			cout << "| | \\_|| (_) ||     || |_`_|   | | | || | | || |_`_|| (_) | " << endl;
+			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
+			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
+			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
+            		cout << "You did not find the real murderer." << endl;
+            	}
+            	else if(playerChoice == '8')
+			cout << "You watch as Xin Gan was escorted out by the police." << endl;  
+			cout << "A sigh of relief in that you have stopped any further" << endl;
+			cout << "deaths from occurring. Good job, you have apprehended" << endl;
+			cout << "the right suspect!" << endl;
+            	else
+            	{
+            		cout << "invalid choice" << endl;
+            	}
+            }
+	}
         else if(playerChoice == '4')
         {
             result.getitem();
