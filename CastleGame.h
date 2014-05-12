@@ -6,14 +6,14 @@ using namespace std;
 char roomindex = '0';	
 char currentFloor = '1';
 
-Room Lobby( "This is the lobby, police officer is here waiting for you answer...", "Lobby", "Police officer", "Well, this is a really weird case. Who is the murderer? what do you think..", "", "");
-Room FirstHallway( "This is the First Hallway." , "First Hallway", "", "", "", "" );
-Room Room1("This is Icer's room, Icer is Always on Skype talking with his girlfriend or practicing dance routine for culture", "Room1", "Icer", "Sorry I was in a skype session with my girlfriend during the time of the murder.  We did hear a man screaming during our skype session which startled my girlfriend a little. My girlfriend never really liked Evan though.", "", "");
-Room Room2("This is Dinh's room, Dinh is sleepy lazy gamer", "Room2", "Dinh", "Killer? I was sleeping when the murder happened because I usually stay up all night going around the room staring at random things until morning. The janitor really creeps me out though. He likes to walk around the hallways at night with his tattered coat.", "Condom", "A freshly used condom");
-Room Room3("This is a empty room", "Room3", "", "", "", "");
-Room BathRoom("This is bathroom. There is a foreigner in here who only speaks Mandarin", "BathRoom", "Xin", "Ta ma de ，wo shi xiong shou。ni yao bu zhua wo，wo jiu sha le ni", "", "");
-Room StudyRoom("This is study room, Ali is workink on something..", "Study Room", "Ali", "Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.", "", "");
-Room Kitchen("This is a big kicken, smells bad, no one is in here", "Kitchen", "", "", "", "");
+Room Lobby( "Room description: This is the lobby, police officer is here waiting for you answer...", "Room name: Lobby", "Person: Police Officer", "Police Officer: 'Well, this is a really weird case. Who is the murderer? what do you think..'", "There is nothing here", "");
+Room FirstHallway( "Room description: This is the First Hallway." , "Room name: First Hallway", "", "", "", "" );
+Room Room1("Room description: This is Icer's room, Icer is Always on Skype talking with his girlfriend or practicing dance routine for culture", "Room name: Room1", "Person: Icer", "Icer: 'Sorry I was in a skype session with my girlfriend during the time of the murder.  We did hear a man screaming during our skype session which startled my girlfriend a little. My girlfriend never really liked Evan though.'", "There is nothing here", "");
+Room Room2("Room description: This is Dinh's room, Dinh is sleepy lazy gamer", "Room name: Room2", "Person: Dinh", "Dinh: 'Killer? I was sleeping when the murder happened because I usually stay up all night going around the room staring at random things until morning. The janitor really creeps me out though. He likes to walk around the hallways at night with his tattered coat.'", "Condom", "A freshly used condom");
+Room Room3("Room description: This is a empty room", "Room name: Room3", "Person: No one is here", "", "", "");
+Room BathRoom("Room description: This is bathroom. There is a foreigner in here who only speaks Mandarin", "Room name: BathRoom", "Person: Xin", "Xin: 'Ta ma de ，wo shi xiong shou. ni yao bu zhua wo，wo jiu sha le ni'", "There is nothing here", "");
+Room StudyRoom("Room description: This is study room, Ali is workink on something..", "Room name: Study Room", "Person: Ali", "Ali: 'Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.'", "There is nothing here", "");
+Room Kitchen("Room description: This is a big kicken, smells bad, no one is in here", "Room name: Kitchen", "Person: No one is here", "", "", "");
 Room result;
 
 void getCurrentRoom()
