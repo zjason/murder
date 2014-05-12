@@ -70,16 +70,16 @@ void getMap(char floor)
     cout <<"              |           |====================== |          |" << endl;
     cout <<"              |           |           |           |          |" << endl;
     cout <<"              |           |  Room1    |   Room3   |          |" << endl;
-    cout <<"              |           |   (1)     |   (3)     |          |" << endl;
+    cout <<"              |           |           |           |          |" << endl;
     cout <<"              |    @@@    |   Icer    |===== =====|          |" << endl;
     cout <<"              |           |           |           |          |" << endl;
     cout <<"              |   Lobby    ==== ======|   Study      Kitchen |" << endl;
-    cout <<"              |    (0)    First Hallway    Room       (6)    |" << endl;
-    cout <<"              |            ==== ======|     (4)              |" << endl;
+    cout <<"              |           First Hallway    Room              |" << endl;
+    cout <<"              |            ==== ======|                      |" << endl;
     cout <<"              |  Police   |           |   Alireza |          |" << endl;
     cout <<"              |           |  Room2    |===== ==== |          |" << endl;
-    cout <<"              |           |   (2)     | BathRoom  |          |" << endl;
-    cout <<"              |           |   Dinh    |   Xin (5) |          |" << endl;
+    cout <<"              |           |           | BathRoom  |          |" << endl;
+    cout <<"              |           |   Dinh    |   Xin     |          |" << endl;
     cout <<"               ==========  =========== ==========  ==========|" << endl;
     cout <<"              				                      {__________}" << endl;
     cout <<"              				                      {2nd  Stair}" << endl;
@@ -98,14 +98,14 @@ void getMap(char floor)
     cout <<"          |           |====================|          |	  " << endl;
     cout <<"          |           |                    |  Boiler  | 	  " << endl;
     cout <<"          |           |       Vault        |   Room   |	  " << endl;
-    cout <<"          |   Game    |        $$$         |   (10)   | 	  " << endl;
-    cout <<"          |   Room    |        (8)         |      ~   |	  " << endl;
-    cout <<"          |    (7)     ====================      ~    |	  " << endl;
+    cout <<"          |   Game    |        $$$         |          | 	  " << endl;
+    cout <<"          |   Room    |                    |      ~   |	  " << endl;
+    cout <<"          |            ====================      ~    |	  " << endl;
     cout <<"          |   ****          Base Hallway       (__)   |	  " << endl;
     cout <<"          |            ========  ==========           |	  " << endl;
     cout <<"          |           |                    |          |	  " << endl;
     cout <<"          |           |    Storeage Room   |   Bob    |	  " << endl;
-    cout <<"          |           |        (9)         |          |	  " << endl;
+    cout <<"          |           |                    |          |	  " << endl;
     cout <<"           ====  ====  ==================== ==========	  " << endl; 
     }
     else if(floor == '2')
