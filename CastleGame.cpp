@@ -1,3 +1,4 @@
+//STILL IN CONSTRUCTION DO NOT REVIEW OR ATTEMPT THIS GAME YET
 //#include "Battle.h"
 //#include "Animation.h"
 
