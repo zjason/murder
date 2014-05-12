@@ -1,6 +1,4 @@
 //STILL IN CONSTRUCTION DO NOT REVIEW OR ATTEMPT THIS GAME YET
-//#include "Battle.h"
-//#include "Animation.h"
 
 int main(int argc, char *argv)
 {
@@ -66,9 +64,17 @@ int main(int argc, char *argv)
     cout << "Castle Burruss to investigate a rape-murder of victim Evan Islam" << endl; 
 //insert more description here
 
+    setCurrentMap(); // Sets character default to entrance lobby
 
-    cout << "" << endl;
-
+    cout << "Choose your action:" << endl;
+    cout << "\t1. Check Map" << endl;
+    cout << "\t2. Get current room information " << endl;
+    cout << "\t3. Interact with person" << endl;
+    cout << "\t4. Interact with item" << endl;
+    cout << "\t5. Go to a different room" << endl;
+//    cout << "2. go east" << endl;
+//    cout << "3. go south" << endl;
+    currentMapinteract()
 
 //    cout << endl;
     char playerChoice;
@@ -79,7 +85,7 @@ int main(int argc, char *argv)
         cin >> playerChoice;
         if(playerChoice == '1' || playerChoice == '2' || playerChoice == '3' || playerChoice == '4')
         {
-        flag = playerInfo(playerChoice, flag);
+        flag = choice(playerChoice, flag);
         }
         else
         {
@@ -301,3 +307,9 @@ areaSelection:
     return 0;
 
 }
+
+//choice(char playerChoice, int flag)
+//{
+    
+//    return 1;
+//}
