@@ -64,7 +64,7 @@ int main(int argc, char *argv)
     cout << "Castle Burruss to investigate a rape-murder of victim Evan Islam" << endl; 
 //insert more description here
 
-    setCurrentMap(); // Sets character default to entrance lobby
+//    setCurrentMap(); // Sets character default to entrance lobby
 
     cout << "Choose your action:" << endl;
     cout << "\t1. Check Map" << endl;
@@ -74,7 +74,7 @@ int main(int argc, char *argv)
     cout << "\t5. Go to a different room" << endl;
 //    cout << "2. go east" << endl;
 //    cout << "3. go south" << endl;
-    currentMapinteract()
+//    currentMapinteract();
 
 //    cout << endl;
     char playerChoice;
@@ -83,9 +83,20 @@ int main(int argc, char *argv)
     while ( flag == 0 )
     {
         cin >> playerChoice;
-        if(playerChoice == '1' || playerChoice == '2' || playerChoice == '3' || playerChoice == '4')
+        if(playerChoice == '1')
         {
-        flag = choice(playerChoice, flag);
+            getmap();
+            cout << "Choose your action:" << endl;
+            cout << "\t1. Check Map" << endl;
+            cout << "\t2. Get current room information " << endl;
+            cout << "\t3. Interact with person" << endl;
+            cout << "\t4. Interact with item" << endl;
+            cout << "\t5. Go to a different room" << endl;
+            
+        }
+        else if(playerChoice == '2')
+        {
+            
         }
         else
         {
@@ -306,6 +317,40 @@ areaSelection:
 
     return 0;
 
+}
+
+getMap()
+{
+                                                 
+    cout <<"                                                     N        " << endl;
+    cout <<"                                                     |        " << endl;
+    cout <<"                                                 W---+---E    " << endl;
+    cout <<"                                                     |        " << endl;
+    cout <<"                                                     S        " << endl;
+    cout <<"              {Base Stair}                                    " << endl;
+    cout <<"              {          }                                    " << endl;
+    cout <<"              {          }                                    " << endl;
+    cout <<"              ~~~~~  ~~~~~                                    " << endl;
+    cout <<"               ====  =====                         ========== " << endl;
+    cout <<"              |           |====================== |          |" << endl;
+    cout <<"              |           |           |           |          |" << endl;
+    cout <<"              |           |  Room1    |   Room3   |          |" << endl;
+    cout <<"              |           |   (1)     |   (3)     |          |" << endl;
+    cout <<"              |    @@@    |   Icer    |===== =====|          |" << endl;
+    cout <<"              |           |           |           |          |" << endl;
+    cout <<"              |   Lobby    ==== ======|   Study      Kitchen |" << endl;
+    cout <<"              |    (0)    First Hallway    Room       (6)    |" << endl;
+    cout <<"              |            ==== ======|     (4)              |" << endl;
+    cout <<"              |  Police   |           |   Alireza |          |" << endl;
+    cout <<"              |           |  Room2    |===== ==== |          |" << endl;
+    cout <<"              |           |   (2)     | BathRoom  |          |" << endl;
+    cout <<"              |           |   Dinh    |   Xin (5) |          |" << endl;
+    cout <<"               ==========  =========== ==========  ==========|" << endl;
+    cout <<"              {          }                                    " << endl;
+    cout <<"              {2nd  Stair}                                    " << endl;
+    cout <<"              {          }                                    " << endl;
+    cout <<"              ~~~~~~~~~~~~                                    " << endl;
+    
 }
 
 //choice(char playerChoice, int flag)
