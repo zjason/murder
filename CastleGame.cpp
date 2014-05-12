@@ -109,7 +109,7 @@ int main()
 			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
 			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
 			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
-            		cout << "You did not find the real murderer." << endl;
+            		cout << "You did not find the real murderer." << endl << endl << endl;
             	}
             	else if(playerChoice == '9')
             	{
@@ -123,13 +123,21 @@ int main()
 			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
 			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
 			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
-            		cout << "You did not find the real murderer." << endl;
+            		cout << "You did not find the real murderer." << endl << endl << endl;
             	}
             	else if(playerChoice == '8')
 			cout << "You watch as Xin Gan was escorted out by the police." << endl;  
 			cout << "A sigh of relief in that you have stopped any further" << endl;
 			cout << "deaths from occurring. Good job, you have apprehended" << endl;
 			cout << "the right suspect!" << endl;
+			cout << " _   _  _  ___   _____  _____  ___    _     _ " << endl;
+			cout << "| | | || ||  _`\\|_   _||  _  ||  _`\\ \\ \\   / /" << endl;
+			cout << "| | | || || | \\_\\ | |  | | | || |_| | \\ \\_/ / " << endl;
+			cout << "| | | || || |  _  | |  | | | || ,  /   \\   /  " << endl;  
+			cout << "| \\_/ || || |_/ / | |  | |_| || |\\ \\    | |   " << endl;   
+			cout << " \\___/ |_||____/' |_|  |_____||_| \\_\\   |_|   " << endl;   
+                                              			
+
             	else if(playerChoice == '10')
             	{
             		break;
