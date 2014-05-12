@@ -130,6 +130,10 @@ int main()
 			cout << "A sigh of relief in that you have stopped any further" << endl;
 			cout << "deaths from occurring. Good job, you have apprehended" << endl;
 			cout << "the right suspect!" << endl;
+            	else if(playerChoice == '10')
+            	{
+            		break;
+            	}
             	else
             	{
             		cout << "invalid choice" << endl;
