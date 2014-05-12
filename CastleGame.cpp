@@ -64,17 +64,27 @@ int main(int argc, char *argv)
 
     cout << "Description: You(Detective Darren Maczka), have been summoned to" << endl;
     cout << "Castle Burruss to investigate a rape-murder of victim Evan Islam" << endl; 
+//insert more description here
 
+
+    cout << "" << endl;
 
 
 //    cout << endl;
-//    char playerCategory;
+    char playerChoice;
 
     int flag = 0;
     while ( flag == 0 )
     {
-        cin >> playerCategory;
-        flag = playerInfo(playerCategory, flag);
+        cin >> playerChoice;
+        if(playerChoice == '1' || playerChoice == '2' || playerChoice == '3' || playerChoice == '4')
+        {
+        flag = playerInfo(playerChoice, flag);
+        }
+        else
+        {
+            cout << "incorrect choice argument" << endl;
+        }
     }
 
     // enemy variables
