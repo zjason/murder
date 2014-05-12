@@ -81,7 +81,7 @@ int main(int argc, char *argv)
         }
         else if(playerChoice == '2')
         {
-            Lobby.getInfo();
+            //Lobby.getInfo();
         }
         else if(playerChoice == '3')
         {
