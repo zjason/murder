@@ -10,7 +10,7 @@ Room::Room()
 	itemDes = "";
 }
 
-Room::Room(string des, string character, string name, string talk, string item, string itemDes)
+Room::Room(string des, string name, string character, string talk, string item, string itemDes)
 {
 	this->des = des;
 	this->character = character;
