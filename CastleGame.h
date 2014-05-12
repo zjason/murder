@@ -6,6 +6,7 @@ using namespace std;
 char roomindex = '0';	
 char currentFloor = '1';
 
+//Room FirstHallway( "Room description: This is the First Hallway." , "Room name: First Hallway", "", "", "", "" );
 //Lobby
 Room Lobby( "Room description: This is the lobby, police officer is here waiting for you answer...", "Room name: Lobby", "Person: Police Officer", "Police Officer: 'Well, this is a really weird case. Who is the murderer? '", "Item: BaseStair", "Info: Staircase to basement");
 Room Room1("Room description: This is Icer's room, Icer is Always on Skype talking with his girlfriend or practicing dance routine for culture", "Room name: Icer's Room", "Person: Icer", "Icer: 'Sorry I was in a skype session with my girlfriend during the time of the murder.  We did hear a man screaming during our skype session which startled my girlfriend a little. My girlfriend never really liked Evan though.'", "Item: Icer's laptop", "Info: Don't you ever look up Icer's laptop");
@@ -17,11 +18,11 @@ Room Kitchen("Room description: This is a big kicken, smells bad, no one is in h
 //Basement
 Room GameRoom("Room description: This is the nice game room with a fancy billiards table, but no one is here, guess everyone is busy.", "Room name: Game Room", "Person: No one is here.", "", "Item: Billiards table", "Info: Nice and fancy table.");
 Room Vault("Room description: This is a big vault, looks very old with spider net all over it. must be the castle owner's. Locked anyway", "Room name: Vault", "Person: no one is here.", "", "Item: lock", "Info: Rusty lock, could not open");
-Room Boiler("Room description: This is boiler room, janitor Bob is here, he looks so weird", "Room name: Boiler Room", "Person: Janitor Bob", "'what a 'cold' case this is huh.  I was fixing the heater earlier today and Pedro dropped by with these boots.'", "Item: Bloody boots", "Info: Blood stains are on the boots.");
-Room Storage("Room description: This is Storage room, boxes here.", "Room name: Storage Room", "Person: no one is here", "", "Item: boxes", "Info: Some old used clothes");
+Room BoilerRoom("Room description: This is boiler room, janitor Bob is here, he looks so weird", "Room name: Boiler Room", "Person: Janitor Bob", "'what a 'cold' case this is huh.  I was fixing the heater earlier today and Pedro dropped by with these boots.'", "Item: Bloody boots", "Info: Blood stains are on the boots.");
+Room StorageRoom("Room description: This is Storage room, boxes here.", "Room name: Storage Room", "Person: no one is here", "", "Item: boxes", "Info: Some old used clothes");
 Room result;
 
-void getCurrentRoom()
+void getCurrentRoom1()
 {
 	if (roomindex == '0' )
 	{
@@ -53,14 +54,83 @@ void getCurrentRoom()
 	}
 }
 
+void getCurrentRoom0()
+{
+	if (roomindex == '0' )
+	{
+		result = GameRoom;
+	}
+	else if (roomindex == '1')
+	{
+		result = Vault;
+	}
+	else if (roomindex == '2')
+	{
+		result = StorageRoom;
+	}
+	else if (roomindex == '3')
+	{
+		result = BoilerRoom;
+	}
+}
+/*
+void getCurrentRoom2()
+{
+	if (roomindex == '0' )
+	{
+		result = Library;
+	}
+	else if (roomindex == '1')
+	{
+		result = Bolcony;
+	}
+	else if (roomindex == '2')
+	{
+		result =  ;
+	}
+	else if (roomindex == '3')
+	{
+		result =  ;
+	}
+	else if (roomindex == '4')
+	{
+		result = StudyRoom;
+	}
+	else if (roomindex == '5')
+	{
+		result = BathRoom;
+	}
+	else if (roomindex == '6')
+	{
+		result = Kitchen;
+	}
+}
+*/
+
+void chooseRoom()
+{
+	if (currentFloor == '0')
+	{
+		getCurrentRoom0();
+	}
+	else if (currentFloor == '1')
+	{
+		getCurrentRoom1();
+	}
+	else
+	{
+		//getCurrentRoom2();
+	}
+}
+
 void setCurrentRoom(char a)
 {
 	roomindex = a;
 }
 
-void getMap(char floor)
+void getMap()
 {
-    if(floor == '1')
+    if(currentFloor == '1')
     {
     cout <<"                                                     N        " << endl;
     cout <<"                                                     |        " << endl;
@@ -91,7 +161,7 @@ void getMap(char floor)
     cout <<"                                                  {__________}" << endl;
     cout <<"                                                  ~~~~~~~~~~~~" << endl;
     }
-    else if(floor == '0')
+    else if(currentFloor == '0')
     {
     cout <<"                                                      N       " << endl;	  
     cout <<"                                                      |       " << endl;
@@ -111,9 +181,9 @@ void getMap(char floor)
     cout <<"          |           |                    |          |	  " << endl;
     cout <<"          |           |    Storeage Room   |   Bob    |	  " << endl;
     cout <<"          |           |                    |          |	  " << endl;
-    cout <<"           ====  ====  ==================== ==========	  " << endl; 
+    cout <<"           ====  ====  ==================== ==========	  " << endl;  
     }
-    else if(floor == '2')
+    else if(currentFloor == '2')
     {
     cout <<"                                                      N	  " << endl;
     cout <<"                                                      |	  " << endl;
@@ -136,7 +206,8 @@ void getMap(char floor)
     cout <<"          |           |            |   Evan    |{_________}   " << endl;                
     cout <<"           ==========  ========================={_________}   " << endl;
     cout <<"                                                {2nd Stair}	  " << endl;
-}		
+    }		
+}
 
 void displayRoomlist()
 {
@@ -154,6 +225,25 @@ void displayRoomlist()
 	else if (currentFloor == '0')
 	{
 	cout << "Where would you like to go?" << endl;
-	cout << "7. Game Room" << endl;
+	cout << "0. Game Room" << endl;
+	cout << "1. Vault" << endl;
+	cout << "2. Storage Room" << endl;
+	cout << "3. Boiler Room" << endl;
 	}
+	else if(currentFloor == '2')
+	{
+	cout << "Where would you like to go?" << endl;
+	cout << "0. Library" << endl;
+	cout << "1. Balcony" << endl;
+	cout << "2. Room 5" << endl;
+	cout << "3. Room 6" << endl;
+	cout << "4. Room 7" << endl;
+	cout << "5. Room 8" << endl;
+	cout << "6. Common Room" << endl;
+	}
+}
+
+void changeFloor(char f)
+{
+	currentFloor = f;
 }
