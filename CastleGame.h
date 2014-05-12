@@ -9,6 +9,6 @@
 	Room Room2("This is Dinh's room, Dinh is sleepy lazy gamer", "Room2", "Dinh", "Killer? I was sleeping when the murder happened because I usually stay up all night going around the room staring at random things until morning. The janitor really creeps me out though. He likes to walk around the hallways at night with his tattered coat.", "Condom", "A freshly used condom");
 	Room Room3("This is a empty room", "Room3", "", "", "", "");
 	Room BathRoom("This is bathroom, wait! why Xin is HERE?? He only speaks mandarin.", "BathRoom", "Xin", "他妈的，我是凶手。你要现在要不抓我，我就杀了你", "", "");
-	Room StudyRoom("This is study room, Ali is workink on something..", "Study Room", "Ali", "Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.", "", "");
-	Room Kitchen("This is a big kicken, smells bad, no one is in here", "Kitchen", "", "", "", "");
+	Room StudyRoom("This is study room, Ali is working on something..", "Study Room", "Ali", "Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.", "", "");
+	Room Kitchen("This is a big kicken, smells funny, no one is in here", "Kitchen", "", "", "", "");
 
