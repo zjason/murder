@@ -6,14 +6,14 @@ using namespace std;
 char roomindex = '0';	
 char currentFloor = '1';
 
-Room Lobby( "Room description: This is the lobby, police officer is here waiting for you answer...", "Room name: Lobby", "Person: Police Officer", "Police Officer: 'Well, this is a really weird case. Who is the murderer? what do you think..'", "There is nothing here", "");
+Room Lobby( "Room description: This is the lobby, police officer is here waiting for you answer...", "Room name: Lobby", "Person: Police Officer", "Police Officer: 'Well, this is a really weird case. Who is the murderer? what do you think..'", "Item: BaseStair", "");
 Room FirstHallway( "Room description: This is the First Hallway." , "Room name: First Hallway", "", "", "", "" );
-Room Room1("Room description: This is Icer's room, Icer is Always on Skype talking with his girlfriend or practicing dance routine for culture", "Room name: Room1", "Person: Icer", "Icer: 'Sorry I was in a skype session with my girlfriend during the time of the murder.  We did hear a man screaming during our skype session which startled my girlfriend a little. My girlfriend never really liked Evan though.'", "There is nothing here", "");
-Room Room2("Room description: This is Dinh's room, Dinh is sleepy lazy gamer", "Room name: Room2", "Person: Dinh", "Dinh: 'Killer? I was sleeping when the murder happened because I usually stay up all night going around the room staring at random things until morning. The janitor really creeps me out though. He likes to walk around the hallways at night with his tattered coat.'", "Condom", "A freshly used condom");
+Room Room1("Room description: This is Icer's room, Icer is Always on Skype talking with his girlfriend or practicing dance routine for culture", "Room name: Room1", "Person: Icer", "Icer: 'Sorry I was in a skype session with my girlfriend during the time of the murder.  We did hear a man screaming during our skype session which startled my girlfriend a little. My girlfriend never really liked Evan though.'", "Item: There is nothing here", "");
+Room Room2("Room description: This is Dinh's room, Dinh is sleepy lazy gamer", "Room name: Room2", "Person: Dinh", "Dinh: 'Killer? I was sleeping when the murder happened because I usually stay up all night going around the room staring at random things until morning. The janitor really creeps me out though. He likes to walk around the hallways at night with his tattered coat.'", "Item: Condom", "A freshly used condom");
 Room Room3("Room description: This is a empty room", "Room name: Room3", "Person: No one is here", "", "", "");
-Room BathRoom("Room description: This is bathroom. There is a foreigner in here who only speaks Mandarin", "Room name: BathRoom", "Person: Xin", "Xin: 'Ta ma de ，wo shi xiong shou. ni yao bu zhua wo，wo jiu sha le ni'", "There is nothing here", "");
-Room StudyRoom("Room description: This is study room, Ali is workink on something..", "Room name: Study Room", "Person: Ali", "Ali: 'Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.'", "There is nothing here", "");
-Room Kitchen("Room description: This is a big kicken, smells bad, no one is in here", "Room name: Kitchen", "Person: No one is here", "There is nothing here", "", "");
+Room BathRoom("Room description: This is bathroom. There is a foreigner in here who only speaks Mandarin", "Room name: BathRoom", "Person: Xin", "Xin: 'Ta ma de ，wo shi xiong shou. ni yao bu zhua wo，wo jiu sha le ni'", "Item: There is nothing here", "");
+Room StudyRoom("Room description: This is study room, Ali is workink on something..", "Room name: Study Room", "Person: Ali", "Ali: 'Can't talk now, I'm on a strict deadline for this project. I'm building a timer to set off a delayed fire...for no evil means I swear.'", "Item: There is nothing here", "");
+Room Kitchen("Room description: This is a big kicken, smells bad, no one is in here", "Room name: Kitchen", "Person: No one is here", "", "Item: UpStair", "");
 Room result;
 
 void getCurrentRoom()
@@ -70,16 +70,16 @@ void getMap(char floor)
     cout <<"              |           |====================== |          |" << endl;
     cout <<"              |           |           |           |          |" << endl;
     cout <<"              |           |  Room1    |   Room3   |          |" << endl;
-    cout <<"              |           |           |           |          |" << endl;
+    cout <<"              |           |   (1)     |   (3)     |          |" << endl;
     cout <<"              |    @@@    |   Icer    |===== =====|          |" << endl;
     cout <<"              |           |           |           |          |" << endl;
     cout <<"              |   Lobby    ==== ======|   Study      Kitchen |" << endl;
-    cout <<"              |           First Hallway    Room              |" << endl;
-    cout <<"              |            ==== ======|                      |" << endl;
+    cout <<"              |    (0)    First Hallway    Room       (6)    |" << endl;
+    cout <<"              |            ==== ======|     (4)              |" << endl;
     cout <<"              |  Police   |           |   Alireza |          |" << endl;
     cout <<"              |           |  Room2    |===== ==== |          |" << endl;
-    cout <<"              |           |           | BathRoom  |          |" << endl;
-    cout <<"              |           |   Dinh    |   Xin     |          |" << endl;
+    cout <<"              |           |   (2)     | BathRoom  |          |" << endl;
+    cout <<"              |           |   Dinh    |   Xin (5) |          |" << endl;
     cout <<"               ==========  =========== ==========  ==========|" << endl;
     cout <<"              				                      {__________}" << endl;
     cout <<"              				                      {2nd  Stair}" << endl;
@@ -98,14 +98,14 @@ void getMap(char floor)
     cout <<"          |           |====================|          |	  " << endl;
     cout <<"          |           |                    |  Boiler  | 	  " << endl;
     cout <<"          |           |       Vault        |   Room   |	  " << endl;
-    cout <<"          |   Game    |        $$$         |          | 	  " << endl;
-    cout <<"          |   Room    |                    |      ~   |	  " << endl;
-    cout <<"          |            ====================      ~    |	  " << endl;
+    cout <<"          |   Game    |        $$$         |   (10)   | 	  " << endl;
+    cout <<"          |   Room    |        (8)         |      ~   |	  " << endl;
+    cout <<"          |    (7)     ====================      ~    |	  " << endl;
     cout <<"          |   ****          Base Hallway       (__)   |	  " << endl;
     cout <<"          |            ========  ==========           |	  " << endl;
     cout <<"          |           |                    |          |	  " << endl;
     cout <<"          |           |    Storeage Room   |   Bob    |	  " << endl;
-    cout <<"          |           |                    |          |	  " << endl;
+    cout <<"          |           |        (9)         |          |	  " << endl;
     cout <<"           ====  ====  ==================== ==========	  " << endl; 
     }
     else if(floor == '2')
