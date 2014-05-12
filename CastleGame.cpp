@@ -14,38 +14,38 @@ int main(int argc, char *argv)
                                                                                
                                                                                
     // ASCII castle image
-cout << endl;    
-cout << "                            . " << endl;
-cout << "                            T " << endl;
-cout << "                           ( ) " << endl;
-cout << "                          <===> " << endl;
-cout << "                           F|J " << endl;
-cout << "                           === " << endl;
-cout << "                          J|||F " << endl;
-cout << "                          F|||J " << endl;
-cout << "                         /\/ \/\ " << endl;
-cout << "                         F+++++J " << endl;
-cout << "                        J{}{|}{}F         . " << endl;
-cout << "                    .   F{}{|}{}J         T " << endl;
-cout << "          .         T  J{}{}|{}{}F       ;;;" << endl;
-cout << "          T        /|\ F/\/\|/\/\J  .   ,;;;;. " << endl;
-cout << "         /:\     //'/|\\:=========F T ./;;;;;;\ " << endl;
-cout << "      ./:/:/.   ///|||\\\""""""""" /x\T\;;;;;;/  " << endl;
-cout << "     //:/:/:/\  \\\\|////..[ ]...xXXXx..|====| " << endl;
-cout << "     \:/:/:/:T7 :.:.:.:.:||[ ]|/xXXXXXx\|||||| " << endl;
-cout << "     ::.:.:.:A. `;:;:;:;'=== ==\XXXXXXX/=====. " << endl;
-cout << "     `;""::/xxx\.|,|,|,| ( ) ( )| | | |.=..=.| " << endl;
-cout << "      :. :`\xxx/(_)(_)(_) _   _ | | | |'-''-'| " << endl;
-cout << "      :T-'-.:"":|""'''""|/ \ / \|=====|======| " << endl;
-cout << "      .A."''"||_||,. .. || | | |/\/\/\/ | | || " << endl;
-cout << "   :;:////\:::.'.| || || ||-| |-|/\/\/\+|+| | | " << endl;
-cout << "  ;:;;\////::::,='======='=============/\/\=====. " << endl;
-cout << " :;:::;''':::::;:|__..,__|============/||\|\====| " << endl;
-cout << " :::::;|=:::;:;::|,;:::::          |========|   | " << endl;
-cout << " ::l42::::::(}:::::;::::::_________|========|___|__ " << endl;
-
+    cout << endl;    
+    cout << "                            . " << endl;
+    cout << "                            T " << endl;
+    cout << "                           ( ) " << endl;
+    cout << "                          <===> " << endl;
+    cout << "                           F|J " << endl;
+    cout << "                           === " << endl;
+    cout << "                          J|||F " << endl;
+    cout << "                          F|||J " << endl;
+    cout << "                         /\/ \/\ " << endl;
+    cout << "                         F+++++J " << endl;
+    cout << "                        J{}{|}{}F         . " << endl;
+    cout << "                    .   F{}{|}{}J         T " << endl;
+    cout << "          .         T  J{}{}|{}{}F       ;;;" << endl;
+    cout << "          T        /|\ F/\/\|/\/\J  .   ,;;;;. " << endl;
+    cout << "         /:\     //'/|\\:=========F T ./;;;;;;\ " << endl;
+    cout << "      ./:/:/.   ///|||\\\""""""""" /x\T\;;;;;;/  " << endl;
+    cout << "     //:/:/:/\  \\\\|////..[ ]...xXXXx..|====| " << endl;
+    cout << "     \:/:/:/:T7 :.:.:.:.:||[ ]|/xXXXXXx\|||||| " << endl;
+    cout << "     ::.:.:.:A. `;:;:;:;'=== ==\XXXXXXX/=====. " << endl;
+    cout << "     `;""::/xxx\.|,|,|,| ( ) ( )| | | |.=..=.| " << endl;
+    cout << "      :. :`\xxx/(_)(_)(_) _   _ | | | |'-''-'| " << endl;
+    cout << "      :T-'-.:"":|""'''""|/ \ / \|=====|======| " << endl;
+    cout << "      .A."''"||_||,. .. || | | |/\/\/\/ | | || " << endl;
+    cout << "   :;:////\:::.'.| || || ||-| |-|/\/\/\+|+| | | " << endl;
+    cout << "  ;:;;\////::::,='======='=============/\/\=====. " << endl;
+    cout << " :;:::;''':::::;:|__..,__|============/||\|\====| " << endl;
+    cout << " :::::;|=:::;:;::|,;:::::          |========|   | " << endl;
+    cout << " ::l42::::::(}:::::;::::::_________|========|___|__ " << endl;
+    cout << endl << endl << endl;
     // setting up the stats for the enemy character
-//    enemyInfo();
+    //    enemyInfo();
 
     // area decision variables
 //    int areaChoice1, direction;
@@ -60,6 +60,10 @@ cout << " ::l42::::::(}:::::;::::::_________|========|___|__ " << endl;
 //    cout << "4. Warrior" << endl;
 //    cout << "5. Archer" << endl;
 //    cout << "6. Master Darren Maczka" << endl;
+
+    cout << "Description: You(Detective Darren Maczka), have been summoned to /n Castle Burruss to investigate a rape-murder" << endl; 
+
+
 
 //    cout << endl;
 //    char playerCategory;
