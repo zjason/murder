@@ -61,7 +61,8 @@ int main(int argc, char *argv)
 //    cout << "5. Archer" << endl;
 //    cout << "6. Master Darren Maczka" << endl;
 
-    cout << "Description: You(Detective Darren Maczka), have been summoned to /n Castle Burruss to investigate a rape-murder" << endl; 
+    cout << "Description: You(Detective Darren Maczka), have been summoned to" << endl;
+    cout << "Castle Burruss to investigate a rape-murder of victim Evan Islam" << endl; 
 
 
 
