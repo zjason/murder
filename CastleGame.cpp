@@ -109,7 +109,10 @@ int main()
         		{
         			cout << "You are now in the Second floor" << endl;
         		}
-  			//
+  			else
+  			{
+  				cout << "invalid choice" << endl;
+  			}
         	}
         	else if(currentFloor == '0')
         	{
