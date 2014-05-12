@@ -78,7 +78,7 @@ void getMap(char floor)
     cout <<"              |            ==== ======|     (4)              |" << endl;
     cout <<"              |  Police   |           |   Alireza |          |" << endl;
     cout <<"              |           |  Room2    |===== ==== |          |" << endl;
-    cout <<"              |           |   (2)     | BathRoom  |          |" << endl;
+    cout <<"              |           |   (2)     | Bathroom  |          |" << endl;
     cout <<"              |           |   Dinh    |   Xin (5) |          |" << endl;
     cout <<"               ==========  =========== ==========  ==========|" << endl;
     cout <<"              				                      {__________}" << endl;
@@ -104,7 +104,7 @@ void getMap(char floor)
     cout <<"          |   ****          Base Hallway       (__)   |	  " << endl;
     cout <<"          |            ========  ==========           |	  " << endl;
     cout <<"          |           |                    |          |	  " << endl;
-    cout <<"          |           |    Storeage Room   |   Bob    |	  " << endl;
+    cout <<"          |           |    Storage Room    |   Bob    |	  " << endl;
     cout <<"          |           |        (9)         |          |	  " << endl;
     cout <<"           ====  ====  ==================== ==========	  " << endl; 
     }
