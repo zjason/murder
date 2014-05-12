@@ -15,12 +15,15 @@ private:
 	string name;
 	string character;
 	string talk;
+	string item;
+	string itemDes;
 
 public:
 	Room();
-	Room( string des, string name, string character, string talk);
+	Room( string des, string name, string character, string talk, string item, string itemDes);
 	void getInfo();
 	void gettalk();
+	void getitem();
 
 }
 
