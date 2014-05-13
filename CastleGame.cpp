@@ -72,9 +72,7 @@ int main()
 //    currentMapinteract();
 
 //    cout << endl;
-    char playerChoice;
-
-    int flag = 0;
+    
     while ( flag == 0 )
     {
 		cout << endl;
@@ -93,73 +91,7 @@ int main()
         else if(playerChoice == '3')
 		{
             result.gettalk();
-			if(roomindex == '0')
-            {
-            	cout << "Police Officer: Here is the list of all suspects within the castle," << endl;
-            	cout << "who do you think the murderer is?" << endl;
-            	cout << "a. Stephen Cho" << endl;
-            	cout << "b. Janitor Bob" << endl;
-            	cout << "c. Icer Bing" << endl;
-            	cout << "d. Dinh Nguyen" << endl;
-            	cout << "e. Alireza Majd" << endl;
-            	cout << "f. Jason Zhao" << endl;
-            	cout << "g. Pedro Sorto" << endl;
-            	cout << "h. Xin Gan" << endl;
-            	cout << "i. Evan Islam (suicide)" << endl;
-            	cout << "j. Never Mind, I haven't decided yet." << endl;
-            	cin >> playerChoice;
-            	if(playerChoice == 'a' || playerChoice == 'b' || playerChoice == 'c' || playerChoice == 'd' || playerChoice == 'e' || playerChoice == 'f' || playerChoice == 'g')
-            	{
-            		cout << "You watch as the suspect was escorted out by the police." << endl;
-            		cout << "Someone suddenly runs up to you and stabs you from behind. As you lay" << endl;
-            		cout << "on the ground in shock and losing conciousness, you watch as the real" << endl;
-            		cout << "murderer walks over you and out the front door." << endl;
-			cout << " ___    _____  _   _  ____      _____ __  __  ___    ____   " << endl;
-			cout << "|  _`\\ /  _  \\/ \\_/ \\|  _`\\    |  _  || | | ||  _`\\ |  _`\\ " << endl;
-			cout << "| | \\_|| (_) ||     || |_`_|   | | | || | | || |_`_|| (_) | " << endl;
-			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
-			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
-			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
-            		cout << "You did not find the real murderer." << endl;
-					flag = 1;
-            	}
-            	else if(playerChoice == 'i')
-            	{
-            		cout << "You watch as the police left the vicinity." << endl;
-            		cout << "Someone suddenly runs up to you and stabs you from behind. As you lay" << endl;
-            		cout << "on the ground in shock and losing conciousness, you watch as the real" << endl;
-            		cout << "murderer walks over you and out the front door." << endl;
-			cout << " ___    _____  _   _  ____      _____ __  __  ___    ____   " << endl;
-			cout << "|  _`\\ /  _  \\/ \\_/ \\|  _`\\    |  _  || | | ||  _`\\ |  _`\\ " << endl;
-			cout << "| | \\_|| (_) ||     || |_`_|   | | | || | | || |_`_|| (_) | " << endl;
-			cout << "| |___ |  _  || (_) ||  _|_    | | | || | | ||  _|_ | ,  / " << endl;
-			cout << "| |_, || | | || | | || |_, |   | |_| || \\_/ || |_, || |\\ \\ " << endl;
-			cout << "|____/'|_| |_||_| |_||____/'   |_____|`\\___/'|____/'|_| \\_\\" << endl;
-            		cout << "You did not find the real murderer." << endl;
-					flag = 1;
-            	}
-            	else if(playerChoice == 'h')
-				{
-			cout << "You watch as Xin Gan was escorted out by the police." << endl;  
-			cout << "A sigh of relief in that you have stopped any further" << endl;
-			cout << "deaths from occurring. Good job, you have apprehended" << endl;
-			cout << "the right suspect!" << endl;
-			cout << " _   _  _  ___   _____  _____  ___    _     _ " << endl;
-			cout << "| | | || ||  _`\\|_   _||  _  ||  _`\\ \\ \\   / /" << endl;
-			cout << "| | | || || | \\_\\ | |  | | | || |_| | \\ \\_/ / " << endl;
-			cout << "| | | || || |  _  | |  | | | || ,  /   \\   /  " << endl;  
-			cout << "| \\_/ || || |_/ / | |  | |_| || |\\ \\    | |   " << endl;   
-			cout << " \\___/ |_||____/' |_|  |_____||_| \\_\\   |_|   " << endl;   
-			flag = 1;
-				}
-            	else if(playerChoice == 'j')
-            	{
-            	}
-            	else
-            	{
-            		cout << "invalid choice" << endl;
-            	}
-            }
+			policeCheck();
 		}
         else if(playerChoice == '4')
         {
@@ -170,7 +102,8 @@ int main()
 			displayRoomlist();
 			cout << "user input: ";
             cin >> playerChoice;
-			setCurrentRoom(playerChoice);
+			cout << "-----------------------------------------------------" << endl;
+			roomlistError();
         }
 		else if(playerChoice == '6')
 		{
@@ -179,6 +112,7 @@ int main()
         		cout << "Do you want to go to:" << endl;
         		cout << "\t1. Basement" << endl;
         		cout << "\t2. Second Floor" << endl << endl;
+				cout << "user input: ";
         		cin >> playerChoice;
 				cout << "-----------------------------------------------------" << endl;
         		if(playerChoice == '1')
@@ -189,11 +123,15 @@ int main()
         		}
         		else if (playerChoice == '2')
         		{
-					changeFloor('2');
-        			cout << "You are now in the Second floor" << endl;
+					changeFloor('1');
+					cout << "The stair to the second floor is blocked by a huge box, you cannot pass it for now." << endl;
+        			//cout << "You are now in the Second floor" << endl;
 					setCurrentRoom('0');
         		}
-  			//
+				else
+				{
+					error();
+				}
         	}
         	else if(currentFloor == '0')
         	{
@@ -201,17 +139,20 @@ int main()
         		cout << "You are now on the First floor" << endl;
         		setCurrentRoom('0');
         	}
+			/*
         	else if(currentFloor == '2')
         	{
 				changeFloor('1');
         		cout << "You are now on the First floor" << endl;
 				setCurrentRoom('0');
         	}
+			*/
 		}
         else
         {
-            cout << "incorrect choice argument" << endl;
+            error();
         }
+
 		if(flag == 0)
 		{
 		cout << "Choose your action:" << endl;
