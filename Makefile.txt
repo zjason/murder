@@ -1,0 +1,5 @@
+CXX=clang++
+CXXFLAGS=-Wall
+
+castle: CastleGame.o room.o
+	$(CXX) -o $@ $(LDFLAGS) $^
