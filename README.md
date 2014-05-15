@@ -3,6 +3,7 @@
 How to complie: This project implement base on C++. First downloden the zip file, and open the terminal find the folder you have downloaded(extract the .zip first) and run this command on your terminal:
 
 make -f Makefile.txt
+
 ./castle
 
 How to play:Use unmber lised to jump around the room and interact with people and items. Find the clue and figure out who is the killer.
