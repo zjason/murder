@@ -259,6 +259,8 @@ void error()
 
 void policeCheck()
 {
+     if (currentFloor == '1')
+    {
 	if(roomindex == '0')
             {
             	cout << "Police Officer: Here is the list of all suspects within the castle," << endl;
@@ -328,6 +330,7 @@ void policeCheck()
             	   error();
             	}
             }
+     }
 }
 
 void roomlistError()
