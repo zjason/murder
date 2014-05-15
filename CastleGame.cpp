@@ -73,7 +73,7 @@ int main()
 
 //    cout << endl;
     
-    while ( flag == 0 && playerChoice != NULL)
+    while ( flag == 0 )
     {
 		cout << endl;
 		cout << "user input: ";
